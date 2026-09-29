@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sculptural Living & Mindful Play | Novalace Luxury Pet Collection</title>
+  <meta name="description" content="Explore Novalace's curated collection of architectural cat furniture, sisal scratching sculptures, ceramic water vessels, and wool bouclé daybeds.">
+  
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display, Plus Jakarta Sans, Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Showcase Control Bar (Figma 9:16 Mockup & Token Inspector)
+       ======================================================================== -->
+  <div class="showcase-control-bar">
+    <div class="showcase-badges">
+      <span class="showcase-chip">Collection Catalog &bull; Warm Luxury UI</span>
+      <span style="font-size: 0.75rem; color: #9C9588; display: flex; align-items: center; gap: 4px;">
+        <span class="pulse-dot"></span> 8k Photorealistic Architecture
+      </span>
+    </div>
+    <div class="showcase-tools">
+      <button class="showcase-btn" id="btnToggleFigma916" title="Toggle 9:16 Editorial Mockup Frame">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>Figma 9:16 Mobile Mockup</span>
+      </button>
+      <a href="index.html" class="showcase-btn" style="text-decoration: none;">
+        <span>View Sphère Product Page &rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="page-canvas-wrapper">
+
+    <!-- ========================================================================
+         Top Announcement Bar
+         ======================================================================== -->
+    <div class="announcement-bar">
+      <div class="container">
+        <div class="announcement-content">
+          <div class="announcement-item">
+            <span>🌿</span>
+            <span>Complimentary White-Glove Courier on Orders Over $100</span>
+          </div>
+          <div class="announcement-item" style="opacity: 0.5;">•</div>
+          <div class="announcement-item">
+            <span class="gold">★</span>
+            <span>30-Day Feline Trial Guarantee &bull; 10-Year Solid Hardwood Warranty</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         Site Header & Editorial Navigation
+         ======================================================================== -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <nav class="nav-left" aria-label="Main Navigation">
+            <a href="collection.html" class="nav-link" style="color: var(--accent-gold-dark); font-weight: 700;">The Collection</a>
+            <a href="index.html" class="nav-link">The Sphère</a>
+            <a href="#manifesto" class="nav-link">Our Manifesto</a>
+            <a href="#faq" class="nav-link">Science FAQ</a>
+          </nav>
+
+          <a href="collection.html" class="brand-logo">
+            <h1 class="brand-title">NOVALACE</h1>
+            <span class="brand-tagline">HAUTE FELINE LIVING &bull; ATELIER</span>
+          </a>
+
+          <div class="nav-right">
+            <select class="currency-selector" id="currencySelector" aria-label="Currency Selector">
+              <option value="USD">USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="GBP">GBP (£)</option>
+              <option value="JPY">JPY (¥)</option>
+            </select>
+
+            <button class="nav-icon-btn" id="cartTriggerBtn" aria-label="Open Shopping Bag">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+              <span class="cart-badge-count" id="cartCountBadge">1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================================================================
+         Breadcrumbs
+         ======================================================================== -->
+    <div class="breadcrumb-nav">
+      <div class="container">
+        <a href="collection.html">Home</a>
+        <span class="separator">/</span>
+        <a href="collection.html">Collections</a>
+        <span class="separator">/</span>
+        <span class="current">Sculptural Living &amp; Mindful Play</span>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         1. Top Header Banner
+         ======================================================================== -->
+    <section class="collection-header-section">
+      <div class="container">
+        <span class="collection-kicker">Curated Atelier Collection</span>
+        <h2 class="collection-hero-title">Sculptural Living &amp; Mindful Play for Modern Companions</h2>
+        <p class="collection-hero-subtitle">
+          An architectural repertoire of kinetic scratching spheres, hydration vessels, and orthopedic daybeds—handcrafted from solid European timber, raw sisal, and organic stoneware.
+        </p>
+
+        <!-- Collection Toolbar -->
+        <div class="collection-toolbar">
+          <div class="toolbar-left">
+            <span class="results-count" id="resultsCount">Showing 6 of 6 Sanctuary Objects</span>
+          </div>
+
+          <div class="toolbar-right">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <label for="sortSelect" style="font-size: 0.8rem; color: var(--text-muted);">Sort By:</label>
+              <select class="sort-select" id="sortSelect">
+                <option value="featured">Featured Atelier Pieces</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated (★ 5.0)</option>
+                <option value="reviews">Most Reviewed</option>
+              </select>
+            </div>
+
+            <div class="view-grid-toggles">
+              <button class="view-btn active" data-cols="3" title="3-Column Grid">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="5" height="18" rx="1"/><rect x="10" y="3" width="5" height="18" rx="1"/><rect x="17" y="3" width="5" height="18" rx="1"/></svg>
+              </button>
+              <button class="view-btn" data-cols="2" title="2-Column Grid">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="18" rx="1"/><rect x="13" y="3" width="8" height="18" rx="1"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         2 & 3. Main Catalog Section (Left Sidebar Filters + 3-Col Grid)
+         ======================================================================== -->
+    <main class="catalog-content-section">
+      <div class="container">
+        <div class="catalog-layout-grid">
+          
+          <!-- Left Sidebar Filters -->
+          <aside class="filter-sidebar" aria-label="Product Filters">
+            
+            <!-- Category Filter -->
+            <div>
+              <div class="filter-group-header">
+                <span>Categories</span>
+              </div>
+              <ul class="filter-options-list">
+                <li>
+                  <label class="filter-checkbox-item">
+                    <span><input type="radio" name="cat" value="all" class="filter-category-input" checked> All Sanctuary Objects</span>
+                    <span class="filter-count">6</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-item">
+                    <span><input type="radio" name="cat" value="scratchers" class="filter-category-input"> Scratching Sphères</span>
+                    <span class="filter-count">1</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-item">
+                    <span><input type="radio" name="cat" value="hydration" class="filter-category-input"> Ceramic Hydration</span>
+                    <span class="filter-count">1</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-item">
+                    <span><input type="radio" name="cat" value="towers" class="filter-category-input"> Architectural Towers</span>
+                    <span class="filter-count">2</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-item">
+                    <span><input type="radio" name="cat" value="daybeds" class="filter-category-input"> Bouclé Daybeds</span>
+                    <span class="filter-count">1</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-item">
+                    <span><input type="radio" name="cat" value="care" class="filter-category-input"> Organic Care &amp; Mists</span>
+                    <span class="filter-count">1</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div>
+              <div class="filter-group-header">
+                <span>Price Range</span>
+              </div>
+              <div class="price-slider-container">
+                <input type="range" id="priceRangeSlider" min="20" max="400" step="10" value="400" class="price-slider-input">
+                <div class="price-range-values">
+                  <span>$20</span>
+                  <span id="priceDisplayMax" style="color: var(--accent-gold-dark); font-weight: 700;">$400</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Material Swatches Filter -->
+            <div>
+              <div class="filter-group-header">
+                <span>Materials &amp; Timber</span>
+              </div>
+              <div class="filter-material-swatches">
+                <span class="mat-swatch-chip" data-material="oak">
+                  <span class="mat-swatch-dot" style="background: #D5BA98;"></span>
+                  <span>FSC Oak</span>
+                </span>
+                <span class="mat-swatch-chip" data-material="walnut">
+                  <span class="mat-swatch-dot" style="background: #5A4331;"></span>
+                  <span>Smoked Walnut</span>
+                </span>
+                <span class="mat-swatch-chip" data-material="sisal">
+                  <span class="mat-swatch-dot" style="background: #CBB392;"></span>
+                  <span>Natural Sisal</span>
+                </span>
+                <span class="mat-swatch-chip" data-material="ceramic">
+                  <span class="mat-swatch-dot" style="background: #F4EFE6;"></span>
+                  <span>Matte Ceramic</span>
+                </span>
+                <span class="mat-swatch-chip" data-material="boucle">
+                  <span class="mat-swatch-dot" style="background: #E8E2D5;"></span>
+                  <span>Wool Bouclé</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Stock Status Filter -->
+            <div>
+              <div class="filter-group-header">
+                <span>Availability</span>
+              </div>
+              <label class="filter-checkbox-item">
+                <span><input type="checkbox" id="inStockFilter"> In Stock &bull; Ready to Ship</span>
+                <span class="filter-count">6</span>
+              </label>
+            </div>
+
+            <!-- Reset Filters -->
+            <button class="btn-reset-filters" id="btnResetFilters">Reset All Filters</button>
+
+          </aside>
+
+          <!-- Main 3-Column Product Grid -->
+          <div class="catalog-products-grid" id="catalogProductsGrid">
+            <!-- Dynamically populated via collection.js -->
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ========================================================================
+         4. Mid-Page Highlight Banner
+         "Designed to Protect Fine Furniture While Honoring Natural Instincts"
+         ======================================================================== -->
+    <section class="mid-collection-highlight-section" id="manifesto">
+      <div class="container">
+        <div class="mid-banner-card">
+          
+          <!-- Left: Lifestyle Imagery -->
+          <div class="mid-banner-media">
+            <img src="assets/images/lifestyle_cat.jpg" alt="Novalace Architectural Sanctuary Lifestyle">
+          </div>
+
+          <!-- Right: Manifesto Content -->
+          <div class="mid-banner-content">
+            <span class="collection-kicker">Sanctuary Manifesto</span>
+            <h3 class="mid-banner-heading">Designed to Protect Fine Furniture While Honoring Natural Instincts</h3>
+            <p class="mid-banner-text">
+              Cats do not scratch out of malice; claw maintenance, spinal stretching, and territorial scent marking are fundamental biological imperatives. Novalace crafts architectural objects that channel these primal drives into kinetic sculpture—saving your velvet sofas and bouclé armchairs while enriching your home.
+            </p>
+
+            <div class="manifest-pill-list">
+              <div class="manifest-pill-item">
+                <span style="color: var(--accent-gold-dark);">✦</span>
+                <span>Kinetic 360° Spherical Play satisfies predatory pouncing instincts</span>
+              </div>
+              <div class="manifest-pill-item">
+                <span style="color: var(--accent-gold-dark);">✦</span>
+                <span>100% Unbleached Sisal fibers groom claws with zero messy shredding</span>
+              </div>
+              <div class="manifest-pill-item">
+                <span style="color: var(--accent-gold-dark);">✦</span>
+                <span>Heirloom FSC European Oak &amp; Smoked Walnut complements high-end decor</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 0.5rem;">
+              <a href="index.html" class="btn-primary-add" style="display: inline-flex; text-decoration: none;">
+                <span>Explore The Novalace Sphère &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Bottom FAQ Accordion Section: "The Science of Harmonious Living"
+         ======================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        
+        <div class="section-header-center">
+          <span class="section-kicker">Feline Behavioral Science</span>
+          <h2 class="section-heading">The Science of Harmonious Living</h2>
+          <p class="section-description">How biomechanics and intentional design eliminate friction between pets and pristine interiors.</p>
+        </div>
+
+        <div class="faq-grid">
+          
+          <div class="faq-item open">
+            <div class="faq-question">
+              <span>Why do spherical scratchers satisfy cats better than vertical flat posts?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>A spherical geometry engages both forepaws concurrently, simulating the kinetic resistance of natural fallen timber. As the ball rotates smoothly on precision brass bearings, cats experience dynamic visual feedback that activates their predatory neural pathways without becoming overstimulated.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How does Novalace eliminate the messy debris typical of cardboard scratchers?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Standard cardboard scratchers rely on pressed paper pulp bound with industrial adhesives, which shear into messy flakes under claw impact. Novalace utilizes long-staple, unbleached African sisal fibers spun under high tension and bound with organic cornstarch. Claws penetrate between the fibers to shed dead husk sheaths without cutting the twine.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Are all wood finishes, glazes, and mists non-toxic and feline-safe?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, uncompromisingly. All solid oak and walnut timbers are hand-finished exclusively with food-safe organic beeswax and cold-pressed linseed oils (zero VOCs). Our ceramic fountains use heavy-metal-free, lead-free food grade glazes, and our botanical mists are pure steam-distilled organic hydrolats.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is the 30-Day In-Home Feline Trial?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>We encourage you to place our objects in your living sanctuary for a full month. If your feline companion does not naturally bond with the sculpture within 30 days, our concierge team will arrange a complimentary return courier and issue a 100% full refund.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. Minimalist Footer & Email Newsletter Signup
+         ======================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          
+          <div>
+            <h3 class="footer-brand-title">NOVALACE</h3>
+            <p class="footer-text">
+              Pioneering warm luxury feline architecture. Where uncompromising European craftsmanship meets feline behavioral science. Paris &bull; Kyoto &bull; New York.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Sanctuary Catalog</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">The Sphère 2-in-1</a></li>
+              <li><a href="collection.html">Kanso Feline Tower</a></li>
+              <li><a href="collection.html">Lotus Ceramic Vessel</a></li>
+              <li><a href="collection.html">Nuage Bouclé Daybed</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Atelier Ethos</h5>
+            <ul class="footer-links">
+              <li><a href="#manifesto">Design Manifesto</a></li>
+              <li><a href="#faq">Behavioral Science</a></li>
+              <li><a href="#">FSC Timber Sourcing</a></li>
+              <li><a href="#">Concierge Services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Sanctuary Gazette</h5>
+            <p style="font-size: 0.8rem; color: #9C9588;">Receive seasonal atelier releases, interior styling essays, and feline behavioral insights.</p>
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="Enter your email...">
+              <button class="newsletter-btn">Subscribe</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 Novalace Atelier Inc. All rights reserved. Registered Trademark.</div>
+          <div style="display: flex; gap: 1.5rem;">
+            <a href="#" style="color: #7D766B; text-decoration: none;">Privacy Policy</a>
+            <a href="#" style="color: #7D766B; text-decoration: none;">Terms of Service</a>
+            <a href="#" style="color: #7D766B; text-decoration: none;">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- End page-canvas-wrapper -->
+
+  <!-- ========================================================================
+       Slide-Over Shopify Cart Drawer
+       ======================================================================== -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your Shopping Bag">
+    <div class="cart-header">
+      <h3>Your Bag</h3>
+      <button class="cart-close-btn" id="btnCloseCart" aria-label="Close Bag">&times;</button>
+    </div>
+
+    <div class="free-shipping-bar-container">
+      <div id="freeShippingText">✨ <strong>Unlocked:</strong> Complimentary VIP Carbon-Neutral Delivery!</div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="freeShippingProgress"></div>
+      </div>
+    </div>
+
+    <div class="cart-items-body" id="cartItemsContainer"></div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <span id="cartSubtotal">$148.00</span>
+      </div>
+      <div class="cart-taxes-note">Taxes &amp; duties calculated at secure checkout. 30-Day trial included.</div>
+      <button class="btn-checkout-primary" onclick="alert('Proceeding to Shopify Secure SSL Checkout...');">
+        Secure Checkout &bull; 100% Guaranteed
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Modal: Quick View Inspector
+       ======================================================================== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-window" style="max-width: 780px;">
+      <div class="modal-header">
+        <h3 class="modal-title">Atelier Quick View</h3>
+        <button class="modal-close-btn" id="btnCloseQuickView">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 2rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+          <div style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 1/1; background: var(--surface-subtle); border: 1px solid var(--border-light);">
+            <img src="assets/images/hero_oak.jpg" alt="Quick View Image" id="qvImage" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div id="qvRating" style="font-size: 0.8rem; color: #D4A017; font-weight: 600;">★★★★★ 4.96 (348 Reviews)</div>
+            <h3 id="qvTitle" style="font-family: var(--font-serif); font-size: 1.8rem; line-height: 1.2;">Novalace Sphère</h3>
+            <div id="qvPrice" style="font-family: var(--font-serif); font-size: 1.6rem; font-weight: 600; color: var(--text-primary);">$148.00</div>
+            <p id="qvDescription" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">Architectural solid wood arch with ultra-smooth 360° rotating natural sisal sphere.</p>
+            <div id="qvMaterials" style="font-size: 0.76rem; color: var(--text-muted);">Solid FSC Oak &bull; Handcrafted Sisal</div>
+            <div style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
+              <button class="btn-primary-add" id="btnQvAddToCart" style="flex: 1;">Add to Bag</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Toast Alert Notification
+       ======================================================================== -->
+  <div class="toast-notification" id="toastNotification">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toastMessage">Added to your Novalace bag!</span>
+  </div>
+
+  <script src="collection.js"></script>
+</body>
+</html>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novalace Sphère | 2-in-1 Sisal Cat Scratching Ball & Wellness Toy</title>
+  <meta name="description" content="Discover the Novalace Sphère: an architectural 2-in-1 sisal cat scratching ball toy hand-turned from FSC-certified solid natural wood. Warm luxury design for refined feline sanctuaries.">
+  
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display, Plus Jakarta Sans, Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Showcase Control Bar (Figma / Dribbble Presentation Mode)
+       ======================================================================== -->
+  <div class="showcase-control-bar">
+    <div class="showcase-badges">
+      <span class="showcase-chip">Warm Luxury Shopify Architecture</span>
+      <span style="font-size: 0.75rem; color: #9C9588; display: flex; align-items: center; gap: 4px;">
+        <span class="pulse-dot"></span> Live Interactive Prototype
+      </span>
+    </div>
+    <div class="showcase-tools">
+      <button class="showcase-btn" id="btnToggleInspector">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <line x1="3" y1="9" x2="21" y2="9"/>
+          <line x1="9" y1="21" x2="9" y2="9"/>
+        </svg>
+        <span>Design System Tokens & Specs</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Top Announcement Bar
+       ======================================================================== -->
+  <div class="announcement-bar">
+    <div class="container">
+      <div class="announcement-content">
+        <div class="announcement-item">
+          <span>🌿</span>
+          <span>Complimentary Carbon-Neutral Delivery on Orders Over $100</span>
+        </div>
+        <div class="announcement-item" style="opacity: 0.5;">•</div>
+        <div class="announcement-item">
+          <span class="gold">★</span>
+          <span>30-Day Feline Trial Guarantee &bull; 10-Year Solid Hardwood Warranty</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Site Header & Editorial Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Navigation Left -->
+        <nav class="nav-left" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link">The Sphère</a>
+          <a href="#craftsmanship" class="nav-link">Craftsmanship</a>
+          <a href="#lifestyle" class="nav-link">Sanctuary</a>
+          <a href="#reviews" class="nav-link">Reviews (348)</a>
+          <a href="#faq" class="nav-link">Concierge FAQ</a>
+        </nav>
+
+        <!-- Brand Center Logo -->
+        <a href="#" class="brand-logo">
+          <h1 class="brand-title">NOVALACE</h1>
+          <span class="brand-tagline">HAUTE FELINE LIVING &bull; ATELIER</span>
+        </a>
+
+        <!-- Navigation Right -->
+        <div class="nav-right">
+          <!-- Currency Selector -->
+          <select class="currency-selector" id="currencySelector" aria-label="Currency Selector">
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="JPY">JPY (¥)</option>
+          </select>
+
+          <!-- Search Button -->
+          <button class="nav-icon-btn" aria-label="Search Collection" onclick="alert('Search: Novalace Sphère Collection is currently featured.')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+
+          <!-- Sizing Guide Trigger -->
+          <button class="nav-icon-btn" id="btnOpenSizeGuide" title="Feline Sizing Advisor" aria-label="Feline Sizing Advisor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M2 12h20M7 8v8M12 5v14M17 8v8"/>
+            </svg>
+          </button>
+
+          <!-- Cart Trigger -->
+          <button class="nav-icon-btn" id="cartTriggerBtn" aria-label="Open Shopping Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="cart-badge-count" id="cartCountBadge">1</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Breadcrumb Navigation
+       ======================================================================== -->
+  <div class="breadcrumb-nav">
+    <div class="container">
+      <a href="#">Home</a>
+      <span class="separator">/</span>
+      <a href="#">Feline Living</a>
+      <span class="separator">/</span>
+      <a href="#">Scratching Sculptures</a>
+      <span class="separator">/</span>
+      <span class="current">Sphère 2-in-1 Sisal Scratcher</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Hero Section: High-End Editorial Split Product View
+       ======================================================================== -->
+  <main class="product-hero-section" id="hero">
+    <div class="container">
+      <div class="product-hero-grid">
+        
+        <!-- Left: Gallery Media Stage -->
+        <div class="gallery-column">
+          <div class="gallery-main-wrapper" id="galleryMainWrapper">
+            
+            <!-- Floating Editorial Badges -->
+            <div class="gallery-badge-top-left">
+              <span class="editorial-badge highlight">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Design Excellence 2026
+              </span>
+              <span class="editorial-badge eco">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                100% FSC Solid Hardwood
+              </span>
+            </div>
+
+            <!-- Main Stage Image -->
+            <img src="assets/images/hero_oak.jpg" alt="Novalace Sphère 2-in-1 Sisal Cat Scratching Ball" class="gallery-main-img" id="mainProductImage">
+
+            <!-- 360 Spin Trigger Button -->
+            <button class="spin-trigger-btn" id="btnOpenSpin" aria-label="Open 360 Interactive Viewer">
+              <svg class="spin-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+              <span>Interactive 360° View</span>
+            </button>
+          </div>
+
+          <!-- Thumbnail Strip -->
+          <div class="gallery-thumbs" id="galleryThumbsContainer">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+
+        <!-- Right: Product Details & Conversion Stack -->
+        <div class="product-details-column">
+          
+          <!-- Meta Header -->
+          <div class="product-meta-header">
+            <span class="product-collection-tag">Atelier Edition &bull; Hand-Turned Hardwood</span>
+            <h2 class="product-title">Novalace Sphère</h2>
+            <p class="product-subtitle">2-in-1 Sisal Cat Scratching Ball &amp; Kinetic Play Sphere with Natural Solid Wood Finish</p>
+            
+            <!-- Rating & Social Proof -->
+            <div class="product-rating-bar">
+              <div class="stars-wrapper" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <span class="rating-score">4.96</span>
+              <a href="#reviews" class="reviews-anchor">348 Verified Cat Sanctuary Reviews</a>
+              
+              <div class="live-shopper-pill">
+                <span class="pulse-dot"></span>
+                <span>In 14 bags &bull; 28 browsing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Section -->
+          <div class="product-price-section">
+            <div class="price-row">
+              <span class="current-price" id="productPriceDisplay">$148.00</span>
+              <span class="compare-price" id="productCompareDisplay">$175.00</span>
+              <span class="save-badge">Save $27 (15% Off)</span>
+            </div>
+            <div class="installments-note">
+              <span>Or 4 interest-free payments of <strong>$37.00</strong> with</span>
+              <span style="font-weight: 700; color: #5A31F4;">Shop Pay</span>
+              <span>/</span>
+              <span style="font-weight: 700; color: #FFB3C7; background: #000; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem;">Klarna.</span>
+            </div>
+          </div>
+
+          <!-- Finish Variant Selector -->
+          <div class="variant-group">
+            <div class="variant-header">
+              <span class="variant-title">1. Select Solid Wood Finish:</span>
+              <span class="variant-selected-value" id="selectedFinishLabel">Natural FSC Oak</span>
+            </div>
+            
+            <div class="wood-swatches-grid">
+              <!-- Oak -->
+              <div class="wood-swatch-card active" data-finish="oak" data-name="Natural FSC Oak">
+                <div class="swatch-color-circle oak"></div>
+                <div class="swatch-info">
+                  <span class="swatch-name">Natural Oak</span>
+                  <span class="swatch-sub">Scandinavian Warmth</span>
+                </div>
+              </div>
+
+              <!-- Walnut -->
+              <div class="wood-swatch-card" data-finish="walnut" data-name="Smoked Walnut">
+                <div class="swatch-color-circle walnut"></div>
+                <div class="swatch-info">
+                  <span class="swatch-name">Smoked Walnut</span>
+                  <span class="swatch-sub">Deep Midnight Grain</span>
+                </div>
+              </div>
+
+              <!-- Ash -->
+              <div class="wood-swatch-card" data-finish="ash" data-name="Nordic White Ash">
+                <div class="swatch-color-circle ash"></div>
+                <div class="swatch-info">
+                  <span class="swatch-name">White Ash</span>
+                  <span class="swatch-sub">Clean Minimalist Tone</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Size Variant Selector -->
+          <div class="variant-group">
+            <div class="variant-header">
+              <span class="variant-title">2. Choose Sizing:</span>
+              <button class="size-guide-link" id="btnOpenSizeGuide2" type="button" onclick="document.getElementById('modalSizeGuide').classList.add('active'); document.body.style.overflow='hidden';">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                Feline Sizing Guide
+              </button>
+            </div>
+
+            <div class="size-options-grid">
+              <!-- Petite -->
+              <div class="size-option-card" data-size="petite">
+                <div class="size-option-name">Petite (Ø 18cm)</div>
+                <div class="size-option-dims">For Kittens &amp; Cats under 4.5kg &bull; $128.00</div>
+              </div>
+
+              <!-- Grand Classique -->
+              <div class="size-option-card active" data-size="grand">
+                <span class="size-tag-popular">Most Popular</span>
+                <div class="size-option-name">Grand Classique (Ø 24cm)</div>
+                <div class="size-option-dims">For Adult Cats &amp; Multi-Cat Homes &bull; $148.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pairing Upsell Add-on -->
+          <div class="pairing-addon-box">
+            <div class="addon-left">
+              <input type="checkbox" id="addonCatnip" class="addon-checkbox">
+              <img src="assets/images/detail_craft.jpg" alt="Organic Catnip Mist" class="addon-thumb">
+              <div>
+                <div class="addon-title">Organic Catnip Infusion Mist (100ml)</div>
+                <div class="addon-desc">Spray 2 pumps onto the sisal ball for instant attraction</div>
+              </div>
+            </div>
+            <div class="addon-price-tag">+$18.00</div>
+          </div>
+
+          <!-- Purchase Quantity & CTA Stack -->
+          <div class="purchase-actions-stack">
+            <div class="quantity-stepper">
+              <button class="qty-btn" id="qtyDec" aria-label="Decrease Quantity">-</button>
+              <input type="text" class="qty-input" id="qtyInput" value="1" readonly aria-label="Current Quantity">
+              <button class="qty-btn" id="qtyInc" aria-label="Increase Quantity">+</button>
+            </div>
+
+            <button class="btn-primary-add" id="btnAddToCart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+              <span>Add to Bag — $148.00</span>
+            </button>
+          </div>
+
+          <!-- Express Checkout -->
+          <div class="express-checkout-block">
+            <button class="btn-shop-pay" onclick="document.getElementById('btnAddToCart').click();">
+              <span>Pay with</span>
+              <strong style="letter-spacing: 0.05em;">Shop Pay</strong>
+            </button>
+          </div>
+
+          <!-- Value Assurance Grid -->
+          <div class="value-assurance-grid">
+            <div class="value-item">
+              <div class="value-icon">✦</div>
+              <div class="value-text">
+                <h4>30-Day Feline Trial</h4>
+                <p>If your cat isn't enchanted, returns are 100% free.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🌿</div>
+              <div class="value-text">
+                <h4>FSC Solid Hardwood</h4>
+                <p>Zero cheap MDF or toxic chemical adhesives.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🪐</div>
+              <div class="value-text">
+                <h4>Whisper-Quiet Rotation</h4>
+                <p>Double-sealed champagne brass bearings.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">📦</div>
+              <div class="value-text">
+                <h4>Carbon-Neutral Shipping</h4>
+                <p>Ships in recyclable bespoke luxury gift packaging.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordions: Specs, Craftsmanship, Care & Shipping -->
+          <div class="product-accordions">
+            
+            <div class="accordion-item open">
+              <div class="accordion-header">
+                <span>The Architecture &amp; Anatomy</span>
+                <span class="accordion-icon">+</span>
+              </div>
+              <div class="accordion-body">
+                <p>The Novalace Sphère redefines feline play with architectural harmony. Unlike traditional scratching posts that shed cardboard debris, our sphere utilizes continuous hand-wound unbleached African sisal rope around a durable core, suspended on an arched solid oak chassis with sealed brass bearings for effortless, kinetic rolling motion.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Dimensions &amp; Materials</span>
+                <span class="accordion-icon">+</span>
+              </div>
+              <div class="accordion-body">
+                <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                  <li><strong>Frame:</strong> 100% Solid European Oak or Smoked Walnut (FSC-Certified)</li>
+                  <li><strong>Sphere:</strong> Natural unbleached organic sisal twine (0% chemical bleaching)</li>
+                  <li><strong>Hardware:</strong> Solid brushed champagne gold brass axle &amp; quiet bearings</li>
+                  <li><strong>Grand Size:</strong> 34cm (H) x 30cm (W) x 22cm (D) &bull; Sphere Ø 24cm &bull; Weight 3.4kg</li>
+                  <li><strong>Petite Size:</strong> 26cm (H) x 24cm (W) x 18cm (D) &bull; Sphere Ø 18cm &bull; Weight 2.1kg</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Care, Maintenance &amp; Refill Spheres</span>
+                <span class="accordion-icon">+</span>
+              </div>
+              <div class="accordion-body">
+                <p>Wipe the solid wood frame with a dry or slightly damp linen cloth. The natural sisal core is designed for 3+ years of intense daily scratching. Replacement sisal spheres can be swapped in under 60 seconds with our included magnetic brass tool.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>White-Glove Shipping &amp; Guarantees</span>
+                <span class="accordion-icon">+</span>
+              </div>
+              <div class="accordion-body">
+                <p>Every piece is individually inspected and numbered at our atelier. Orders ship within 24 hours with express tracking. We provide a 10-year structural warranty on all solid wood frames.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Section: Craftsmanship & Architecture of Play (Interactive Hotspots)
+       ======================================================================== -->
+  <section class="craftsmanship-section" id="craftsmanship">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <span class="section-kicker">Atelier Engineering</span>
+        <h2 class="section-heading">Form Follows Feline Instinct</h2>
+        <p class="section-description">Every curve, joint, and fiber of the Novalace Sphère was engineered alongside feline behavioral biologists and furniture artisans.</p>
+      </div>
+
+      <div class="hotspots-interactive-card">
+        
+        <!-- Left Media with Hotspots -->
+        <div class="hotspots-media-container">
+          <img src="assets/images/detail_craft.jpg" alt="Novalace Craftsmanship Macro View">
+          
+          <!-- Hotspot Pins -->
+          <div class="hotspot-pin active" style="top: 25%; left: 35%;" data-target="feat-sisal" title="Organic Handcrafted Sisal">1</div>
+          <div class="hotspot-pin" style="top: 50%; left: 52%;" data-target="feat-brass" title="Brushed Champagne Brass Joint">2</div>
+          <div class="hotspot-pin" style="top: 70%; left: 45%;" data-target="feat-wood" title="FSC Certified Solid Wood Arc">3</div>
+        </div>
+
+        <!-- Right Feature Cards -->
+        <div class="hotspot-features-list">
+          
+          <div class="feature-point-card active" id="feat-sisal">
+            <div class="feature-point-number">01 / The Sphere</div>
+            <h3 class="feature-point-title">Unbleached Hand-Wound Sisal</h3>
+            <p class="feature-point-text">Tightly wound with non-toxic cornstarch adhesive. Provides tactile resistance that cleans and conditions feline claws without shedding mess or fibers.</p>
+          </div>
+
+          <div class="feature-point-card" id="feat-brass">
+            <div class="feature-point-number">02 / Kinetic Pivot</div>
+            <h3 class="feature-point-title">Champagne Brass Precision Bearings</h3>
+            <p class="feature-point-text">Industrial-grade silent ball bearings allow the sphere to spin effortlessly at the lightest tap, engaging your cat's natural hunting and batting reflexes.</p>
+          </div>
+
+          <div class="feature-point-card" id="feat-wood">
+            <div class="feature-point-number">03 / The Frame</div>
+            <h3 class="feature-point-title">FSC-Certified Solid Timber Chassis</h3>
+            <p class="feature-point-text">Hand-sanded to a silky 600-grit finish and sealed with organic food-safe beeswax oil. Heavyweight geometry prevents tipping during spirited play.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Section: Editorial Lifestyle & "Designed for the Modern Home"
+       ======================================================================== -->
+  <section class="lifestyle-sanctuary-section" id="lifestyle">
+    <div class="container">
+      
+      <div class="lifestyle-banner-grid">
+        
+        <!-- Left: Lifestyle Sanctuary Visual -->
+        <div class="lifestyle-image-card">
+          <img src="assets/images/lifestyle_cat.jpg" alt="British Shorthair with Novalace Sphère in Japandi Living Room">
+          <div class="lifestyle-tag-overlay">
+            <h4 class="lifestyle-tag-title">The Sanctuary Aesthetic</h4>
+            <p class="lifestyle-tag-sub">Photographed in Kyoto Residence &bull; Natural Oak Finish</p>
+          </div>
+        </div>
+
+        <!-- Right: Editorial Philosophy & Comparison -->
+        <div class="lifestyle-copy-content">
+          <span class="section-kicker">Sanctuary Living</span>
+          <h2 class="section-heading" style="font-size: 2.3rem;">Elevating Pet Living to High Art</h2>
+          <blockquote class="quote-highlight">
+            "Your living room deserves furniture that honors both your architectural sensibilities and your cat's happiness."
+          </blockquote>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Traditional pet trees are eyesores made from cheap synthetic carpet and cardboard. Novalace bridges the divide with heirloom furniture that complements travertine, bouclé, and natural timber.
+          </p>
+
+          <!-- Direct Comparison Box -->
+          <div class="comparison-container">
+            <div class="comparison-row header">
+              <div>Attributes</div>
+              <div>Novalace Sphère</div>
+              <div>Standard Scratcher</div>
+            </div>
+            <div class="comparison-row">
+              <div>Lifespan</div>
+              <div class="check-icon">✓ 3+ Years (Refillable)</div>
+              <div class="cross-icon">✕ 1 - 2 Months</div>
+            </div>
+            <div class="comparison-row">
+              <div>Living Room Aesthetic</div>
+              <div class="check-icon">✓ Architectural Art</div>
+              <div class="cross-icon">✕ Cluttered Eyesore</div>
+            </div>
+            <div class="comparison-row">
+              <div>Debris &amp; Cleanup</div>
+              <div class="check-icon">✓ Zero Shredding</div>
+              <div class="cross-icon">✕ Messy Flakes</div>
+            </div>
+            <div class="comparison-row">
+              <div>Materials</div>
+              <div class="check-icon">✓ Solid Oak &amp; Brass</div>
+              <div class="cross-icon">✕ Pressed Cardboard</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Section: Customer Reviews & Social Proof Wall
+       ======================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <span class="section-kicker">Verified Feline Sanctuaries</span>
+        <h2 class="section-heading">Loved by Over 3,400+ Homes</h2>
+        <p class="section-description">Real testimonials from design enthusiasts and their cherished companions.</p>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="reviews-dashboard-grid">
+        
+        <!-- Score Summary Card -->
+        <div class="review-score-summary">
+          <div class="big-score">4.96</div>
+          <div class="score-stars">★★★★★</div>
+          <div class="score-count">Based on 348 Verified Reviews</div>
+          
+          <div class="rating-breakdown-bars">
+            <div class="breakdown-row">
+              <span>5 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 96%;"></div></div>
+              <span>96%</span>
+            </div>
+            <div class="breakdown-row">
+              <span>4 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 4%;"></div></div>
+              <span>4%</span>
+            </div>
+            <div class="breakdown-row">
+              <span>3 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 0%;"></div></div>
+              <span>0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter & Reviews List -->
+        <div>
+          <div class="reviews-filter-bar">
+            <div class="filter-pills-list">
+              <button class="filter-pill active">All Reviews (348)</button>
+              <button class="filter-pill">Natural Oak (214)</button>
+              <button class="filter-pill">Smoked Walnut (96)</button>
+              <button class="filter-pill">With Photos (142)</button>
+            </div>
+          </div>
+
+          <div class="reviews-cards-grid">
+            
+            <!-- Review 1 -->
+            <div class="review-card">
+              <div>
+                <div class="review-stars-row">★★★★★</div>
+                <h4 class="review-title">"Finally, pet furniture that looks like an art piece."</h4>
+                <p class="review-text">I was skeptical if my British Shorthair, Winston, would prefer this over his old post. Within 10 minutes of unboxing, he was batting the sphere like a frantic kitten. The solid oak is sublime next to our travertine tables.</p>
+              </div>
+              <div class="review-author-meta">
+                <span class="author-name">Elena Rostova, Zurich</span>
+                <span class="verified-tag">✓ Verified Sanctuary Owner</span>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+              <div>
+                <div class="review-stars-row">★★★★★</div>
+                <h4 class="review-title">"Zero cardboard shred on my wool rug."</h4>
+                <p class="review-text">The biggest win is zero mess. The tight sisal weave has held up for 4 months of aggressive clawing and still looks pristine. The brass hardware spins like a Swiss watch.</p>
+              </div>
+              <div class="review-author-meta">
+                <span class="author-name">Marcus &amp; Lily, Soho NYC</span>
+                <span class="verified-tag">✓ Verified Sanctuary Owner</span>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div>
+                <div class="review-stars-row">★★★★★</div>
+                <h4 class="review-title">"Exceeded all expectations. Smoked Walnut is rich!"</h4>
+                <p class="review-text">The wood quality is equal to our custom dining table. Heavy base so it never wobbles. Both of our Ragdolls take turns spinning it throughout the day.</p>
+              </div>
+              <div class="review-author-meta">
+                <span class="author-name">Claire K., Tokyo</span>
+                <span class="verified-tag">✓ Verified Sanctuary Owner</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Section: Concierge FAQ
+       ======================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-kicker">Helpful Inquiries</span>
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-grid">
+        
+        <div class="faq-item open">
+          <div class="faq-question">
+            <span>How do I introduce the Novalace Sphère to a timid cat?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Every Novalace Sphère includes a small vial of organic catnip botanical spray. Lightly mist the sisal sphere and gently spin the ball with your hand to demonstrate the kinetic movement. Most felines engage within 24 to 48 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does it wobble or slide across hardwood floors?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not at all. The solid wood chassis features a low center of gravity (3.4kg on Grand Classique) and is fitted with high-density natural Portuguese cork non-skid pads that protect delicate flooring while preventing movement.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do replacement sisal balls work?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Our core is 100% modular. When you wish to renew the sisal sphere after years of play, you can order a replacement sphere on our site and swap it in under 60 seconds with the provided brass hex wrench.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is your 30-Day Feline Trial policy?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We want both you and your cat to be completely in love. If within 30 days your companion hasn't embraced the Sphère, notify our concierge team for a prepaid return label and a 100% full refund.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Sticky Add to Bag Bottom Bar
+       ======================================================================== -->
+  <div class="sticky-atc-bar" id="stickyAtcBar">
+    <div class="sticky-atc-inner">
+      <div class="sticky-product-info">
+        <img src="assets/images/hero_oak.jpg" alt="Novalace Sphère" class="sticky-thumb">
+        <div>
+          <h4 class="sticky-title">Novalace Sphère 2-in-1 Sisal Scratcher</h4>
+          <span class="sticky-variant-label" id="stickyVariantLabel">Natural FSC Oak / Grand Classique</span>
+        </div>
+      </div>
+      <div class="sticky-actions">
+        <span class="sticky-price" id="stickyPriceDisplay">$148.00</span>
+        <button class="btn-primary-add" id="stickyAddBtn" style="padding: 0.75rem 1.75rem;">
+          <span>Add to Bag</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Slide-Over Shopify Cart Drawer
+       ======================================================================== -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your Shopping Bag">
+    <div class="cart-header">
+      <h3>Your Bag</h3>
+      <button class="cart-close-btn" id="btnCloseCart" aria-label="Close Bag">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress Goal -->
+    <div class="free-shipping-bar-container">
+      <div id="freeShippingText">✨ <strong>Unlocked:</strong> Complimentary VIP Carbon-Neutral Delivery!</div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="freeShippingProgress"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Body -->
+    <div class="cart-items-body" id="cartItemsContainer">
+      <!-- Injected by app.js -->
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <span id="cartSubtotal">$148.00</span>
+      </div>
+      <div class="cart-taxes-note">Taxes and duties calculated at secure checkout. 30-Day trial included.</div>
+      <button class="btn-checkout-primary" onclick="alert('Proceeding to Shopify Secure SSL Checkout...');">
+        Secure Checkout &bull; 100% Guaranteed
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Modal: Interactive 360 Spin Visualizer
+       ======================================================================== -->
+  <div class="modal-overlay" id="modalSpin">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Interactive 360° Sphère Visualizer</h3>
+        <button class="modal-close-btn" id="btnCloseSpin">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="spin-canvas-container">
+          <div class="spin-visual-frame" id="spinVisualFrame">
+            <img src="assets/images/hero_oak.jpg" alt="Interactive Spin" id="spinCanvasImage">
+          </div>
+          <div class="spin-drag-hint">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 9l-3 3 3 3M19 9l3 3-3 3M2 12h20"/></svg>
+            <span>Click &amp; drag left/right to spin the natural sisal sphere</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Modal: Feline Sizing Advisor
+       ======================================================================== -->
+  <div class="modal-overlay" id="modalSizeGuide">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Feline Sizing &amp; Sanctuary Advisor</h3>
+        <button class="modal-close-btn" id="btnCloseSizeGuide">&times;</button>
+      </div>
+      <div class="modal-body" style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+        <p style="margin-bottom: 1rem;">Choosing the ideal diameter ensures optimal spinal stretch and batting engagement for your cat:</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="background: var(--surface-subtle); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.3rem;">Petite (Ø 18cm)</h4>
+            <ul style="font-size: 0.8rem; padding-left: 1rem;">
+              <li>Cat Weight: Under 4.5 kg (10 lbs)</li>
+              <li>Breeds: Siamese, Burmese, Devon Rex, Kittens</li>
+              <li>Living Space: Apartments &amp; compact corners</li>
+            </ul>
+          </div>
+          <div style="background: var(--surface-tint); padding: 1rem; border-radius: var(--radius-md); border: 1.5px solid var(--accent-gold);">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.3rem;">Grand Classique (Ø 24cm) ★</h4>
+            <ul style="font-size: 0.8rem; padding-left: 1rem;">
+              <li>Cat Weight: 4.5 kg – 10 kg+ (10 - 22 lbs)</li>
+              <li>Breeds: British Shorthair, Ragdoll, Maine Coon</li>
+              <li>Recommended for multi-cat households</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="btn-primary-add" style="width: 100%;" onclick="document.getElementById('modalSizeGuide').classList.remove('active'); document.body.style.overflow='';">
+          Select Grand Classique (Recommended)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Modal: Design System Tokens & Inspector Specs (Figma / Dribbble Mode)
+       ======================================================================== -->
+  <div class="modal-overlay" id="inspectorModal">
+    <div class="modal-window" style="max-width: 840px;">
+      <div class="modal-header">
+        <h3 class="modal-title">Novalace Design System Tokens &amp; Figma Specs</h3>
+        <button class="modal-close-btn" id="btnCloseInspector">&times;</button>
+      </div>
+      <div class="modal-body" style="font-size: 0.85rem; color: var(--text-secondary);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Color Palette Tokens</h4>
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;"><div style="width: 20px; height: 20px; background: #FAF8F5; border: 1px solid #ccc; border-radius: 4px;"></div><code>#FAF8F5</code> Warm Linen Canvas</div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;"><div style="width: 20px; height: 20px; background: #FFFFFF; border: 1px solid #ccc; border-radius: 4px;"></div><code>#FFFFFF</code> Crisp Off-White Card</div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;"><div style="width: 20px; height: 20px; background: #1C1A17; border-radius: 4px;"></div><code>#1C1A17</code> Deep Espresso Charcoal</div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;"><div style="width: 20px; height: 20px; background: #C5A059; border-radius: 4px;"></div><code>#C5A059</code> Brushed Champagne Gold</div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;"><div style="width: 20px; height: 20px; background: #B9664E; border-radius: 4px;"></div><code>#B9664E</code> Muted Terracotta Accent</div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;"><div style="width: 20px; height: 20px; background: #3D4839; border-radius: 4px;"></div><code>#3D4839</code> Forest Olive Green</div>
+            </div>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Typography Tokens</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+              <li><strong>Display / Headings:</strong> Cormorant Garamond &amp; Playfair Display</li>
+              <li><strong>Interface / Body:</strong> Plus Jakarta Sans &amp; Outfit</li>
+              <li><strong>Spacing System:</strong> 8pt / 16pt / 24pt / 48pt / 96pt</li>
+              <li><strong>Elevation:</strong> Ambient Soft Diffused Shadow (0 20px 40px -15px rgba(28,26,23,0.05))</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Toast Alert Notification
+       ======================================================================== -->
+  <div class="toast-notification" id="toastNotification">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toastMessage">Added to your Novalace bag!</span>
+  </div>
+
+  <!-- ========================================================================
+       Site Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <h3 class="footer-brand-title">NOVALACE</h3>
+          <p class="footer-text">Handcrafting architectural pet furniture with warm European luxury aesthetics and pure feline biology in mind. Based in Paris, Kyoto, and New York.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Collections</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">The Sphère 2-in-1</a></li>
+            <li><a href="#">The Solis Cat Perch</a></li>
+            <li><a href="#">Linen Daybeds</a></li>
+            <li><a href="#">Refill Cores &amp; Mists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Atelier &amp; Care</h5>
+          <ul class="footer-links">
+            <li><a href="#craftsmanship">Sustainable Timber Pledge</a></li>
+            <li><a href="#lifestyle">Sanctuary Lookbook</a></li>
+            <li><a href="#reviews">Verified Reviews</a></li>
+            <li><a href="#faq">Concierge &amp; Returns</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sanctuary Gazette</h5>
+          <p style="font-size: 0.8rem; color: #9C9588;">Receive private atelier releases and feline architectural editorial features.</p>
+          <div class="newsletter-input-group">
+            <input type="email" class="newsletter-input" placeholder="Enter your email...">
+            <button class="newsletter-btn">Join</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Novalace Atelier Inc. All rights reserved. Registered Trademark.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: #7D766B; text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: #7D766B; text-decoration: none;">Terms of Service</a>
+          <a href="#" style="color: #7D766B; text-decoration: none;">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
